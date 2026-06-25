@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<meta name="theme-color" content="#ffffff">
+<title>Pergamenre hányt szavak · Venczel-Tóth Evelin — könyves blog & booktube</title>
+<meta name="description" content="Olvasónapló egy korrektor kezétől — mondatról mondatra, könyvről könyvre. Venczel-Tóth Evelin könyves blogja, kritikák, esszék és felolvasások 2016 óta.">
+<meta name="author" content="Venczel-Tóth Evelin">
+<meta name="keywords" content="könyvkritika, booktube, magyar könyves blog, Venczel-Tóth Evelin, korrektor, szerkesztő, irodalom">
+<link rel="canonical" href="https://pergamen-site-premium.vercel.app/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="hu_HU">
+<meta property="og:site_name" content="Pergamenre hányt szavak">
+<meta property="og:url" content="https://pergamen-site-premium.vercel.app/">
+<meta property="og:title" content="Pergamenre hányt szavak · Venczel-Tóth Evelin">
+<meta property="og:description" content="Olvasónapló egy korrektor kezétől — mondatról mondatra, könyvről könyvre.">
+<meta property="og:image" content="https://pergamen-site-premium.vercel.app/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pergamenre hányt szavak — magazin-fejléc kurzív tipográfiával">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pergamenre hányt szavak · Venczel-Tóth Evelin">
+<meta name="twitter:description" content="Olvasónapló egy korrektor kezétől — mondatról mondatra, könyvről könyvre.">
+<meta name="twitter:image" content="https://pergamen-site-premium.vercel.app/og-image.jpg">
+
+<!-- Favicon — SVG (modern) + PNG fallbacks + manifest -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/home.css">
+<link rel="stylesheet" href="assets/shelf.css">
+<link rel="stylesheet" href="assets/print.css" media="print">
+
+<!-- JSON-LD — schema.org Person + WebSite + BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://pergamen-site-premium.vercel.app/#author",
+      "name": "Venczel-Tóth Evelin",
+      "alternateName": "Pergamenre hányt szavak",
+      "jobTitle": ["Korrektor", "Szerkesztő", "Bábszínész", "Könyves blogger"],
+      "description": "Miskolci korrektor-szerkesztő, bábszínész és booktuber, aki 2016 óta írja a Pergamenre hányt szavak olvasónaplót.",
+      "knowsLanguage": ["hu", "en"],
+      "url": "https://pergamen-site-premium.vercel.app/",
+      "sameAs": [
+        "https://pergamenrehanytszavak.wordpress.com/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Miskolc",
+        "addressCountry": "HU"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pergamen-site-premium.vercel.app/#website",
+      "url": "https://pergamen-site-premium.vercel.app/",
+      "name": "Pergamenre hányt szavak",
+      "description": "Olvasónapló egy korrektor kezétől — mondatról mondatra, könyvről könyvre.",
+      "inLanguage": "hu-HU",
+      "author": { "@id": "https://pergamen-site-premium.vercel.app/#author" },
+      "publisher": { "@id": "https://pergamen-site-premium.vercel.app/#author" }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://pergamen-site-premium.vercel.app/#blog",
+      "name": "Pergamenre hányt szavak",
+      "description": "Könyvkritikák, esszék és olvasónapló 2016 óta.",
+      "inLanguage": "hu-HU",
+      "author": { "@id": "https://pergamen-site-premium.vercel.app/#author" },
+      "dateCreated": "2016-01-01",
+      "keywords": "könyvkritika, booktube, magyar irodalom, korrektor, szerkesztő"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Skip link (visible on keyboard focus) -->
+<a href="#tartalom" class="skip-link">Ugrás a tartalomra</a>
+
+<div class="read-progress" id="readProgress"></div>
+
+<div class="concept-banner">
+  <b>Új kritika minden héten</b> <span class="dot">·</span> <span class="hide-narrow">könyvek, őszintén, 2016 óta <span class="dot">·</span> </span>iratkozz fel a Kézirat Klubra
+</div>
+
+<!-- NAV -->
+<nav class="topnav" id="topnav" aria-label="Főmenü">
+  <div class="nav-left">
+    <a href="/kritikak">Kritikák</a>
+    <a href="/esszek">Esszék</a>
+    <a href="/videok">Videók</a>
+    <a href="/esemenyek">Események</a>
+  </div>
+  <a href="/" class="nav-mark">Pergamen</a>
+  <div class="nav-right">
+    <a href="/rolam">Rólam</a>
+    <a href="/kiadoknak">Kiadóknak</a>
+    <a href="/kapcsolat" class="btn-ghost" style="padding:9px 18px;">Kapcsolat</a>
+  </div>
+</nav>
+
+<main id="tartalom">
+
+<!-- MASTHEAD -->
+<header class="masthead" role="banner">
+  <div class="masthead-meta">
+    <span>Miskolc</span>
+    <span class="sep"></span>
+    <span>magyarul, szívből</span>
+  </div>
+  <div class="masthead-tag">könyvekről, őszintén — 2016 óta</div>
+  <div class="masthead-meta right">
+    <span id="todayMeta">friss bejegyzés hetente</span>
+  </div>
+</header>
+
+<div class="masthead-rules"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-chips">
+    <span class="chip honey">Booktube</span>
+    <span class="chip terra">Kritika</span>
+    <span class="chip oat">Szerkesztőségi jegyzet</span>
+  </div>
+
+  <div class="quill-wrap">
+    <span class="line"></span>
+    <svg width="72" height="28" viewBox="0 0 72 28" fill="none" aria-hidden="true">
+      <path d="M 4 16 Q 20 5, 52 10 Q 60 12, 64 17 Q 58 17, 52 16 Q 36 16, 24 18 Q 12 20, 4 16 Z" fill="#1F1A13" stroke="#1F1A13" stroke-width="0.5"/>
+      <path d="M 52 10 Q 58 13, 64 17" stroke="#1F1A13" stroke-width="0.7" fill="none"/>
+      <path d="M 48 11 Q 54 13.5, 60 17" stroke="#1F1A13" stroke-width="0.5" fill="none"/>
+      <path d="M 42 12.5 Q 48 14, 54 17" stroke="#1F1A13" stroke-width="0.45" fill="none"/>
+      <path d="M 34 14 Q 42 15, 48 17" stroke="#1F1A13" stroke-width="0.4" fill="none"/>
+      <circle cx="3" cy="16" r="1.8" fill="#1F1A13"/>
+    </svg>
+    <span class="line"></span>
+  </div>
+
+  <h1 class="hero-logo">
+    Pergamenre
+    <span class="line2">hányt szavak</span>
+  </h1>
+
+  <p class="hero-sub">Könyvekről beszélek, ahogy egy jó barátnak mesélnél éjfél után — őszintén, lelkesen, kicsit megszállottan. Új kritika minden héten.</p>
+
+  <div class="hero-cta-row">
+    <a href="#legujabb" class="btn-primary">
+      Nézd a legújabbat
+      <span class="arrow">→</span>
+    </a>
+    <a href="#klub" class="btn-ghost">Csatlakozz a klubhoz</a>
+  </div>
+
+  <div class="hero-photo reveal" style="background-image:url('assets/img/hero-portrait.jpg'); background-position:center 28%;">
+    <div class="hero-card">
+      <div class="hc-k">Épp most olvasom</div>
+      <div class="hc-t">A könyvtolvaj — 62%</div>
+    </div>
+  </div>
+
+  <svg class="blob" style="top:6%; left:-40px; width:200px;" viewBox="0 0 200 200" aria-hidden="true"><path fill="#fbcb6e" d="M44,-62C56,-53,63,-38,67,-22C71,-6,71,11,64,25C57,39,43,49,28,57C12,65,-6,71,-23,67C-40,63,-56,49,-64,32C-72,15,-71,-5,-64,-22C-57,-39,-44,-52,-29,-61C-14,-70,3,-75,19,-73C35,-71,32,-71,44,-62Z" transform="translate(100 100)"/></svg>
+  <svg class="blob" style="top:18%; right:-30px; width:150px; animation-delay:-6s;" viewBox="0 0 200 200" aria-hidden="true"><path fill="#a5abf9" d="M40,-57C53,-48,64,-37,69,-23C74,-9,73,8,67,23C61,38,49,51,34,59C19,67,1,70,-16,66C-33,62,-49,51,-59,36C-69,21,-73,1,-69,-16C-65,-33,-53,-48,-38,-57C-23,-66,-6,-69,9,-71C24,-73,28,-66,40,-57Z" transform="translate(100 100)"/></svg>
+
+  <svg class="ink-splatter tl" data-rot="-18" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#1F1A13">
+      <circle cx="40" cy="50" r="4"/>
+      <circle cx="65" cy="38" r="2"/>
+      <circle cx="88" cy="60" r="8"/>
+      <ellipse cx="126" cy="78" rx="11" ry="5" transform="rotate(25 126 78)"/>
+      <circle cx="72" cy="108" r="3"/>
+      <circle cx="155" cy="45" r="1.5"/>
+      <circle cx="25" cy="82" r="2"/>
+    </g>
+  </svg>
+  <svg class="ink-splatter br" data-rot="165" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#1F1A13">
+      <circle cx="70" cy="70" r="6"/>
+      <circle cx="110" cy="50" r="3"/>
+      <ellipse cx="100" cy="110" rx="13" ry="7" transform="rotate(-20 100 110)"/>
+      <circle cx="140" cy="130" r="3"/>
+      <circle cx="45" cy="115" r="2"/>
+    </g>
+  </svg>
+  <svg class="ink-splatter tr" data-rot="40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#1F1A13">
+      <circle cx="60" cy="80" r="4"/>
+      <circle cx="110" cy="60" r="2"/>
+      <ellipse cx="130" cy="120" rx="8" ry="4" transform="rotate(40 130 120)"/>
+    </g>
+  </svg>
+</section>
+
+<!-- AUDIO COMPANION -->
+<section class="audio-companion" aria-labelledby="audioTitle">
+  <div class="wrap">
+    <div class="audio-frame reveal">
+      <div class="audio-head">
+        <div class="eyebrow">Hangos olvasónapló</div>
+        <h2 class="audio-title" id="audioTitle">Hallgasd meg — Evelin <em>hangján</em></h2>
+      </div>
+
+      <ul class="audio-tracks">
+        <li>
+          <button type="button"
+                  class="audio-track is-active"
+                  aria-pressed="true"
+                  data-label-play="Lejátszás: Bevezető Tolkienhez, 2 perc 18 másodperc"
+                  data-label-pause="Szünet: Bevezető Tolkienhez"
+                  aria-label="Lejátszás: Bevezető Tolkienhez, 2 perc 18 másodperc">
+            <span class="audio-play" aria-hidden="true">
+              <svg viewBox="0 0 20 24" width="14" height="16"><path fill="currentColor" d="M0 0 L20 12 L0 24 Z"/></svg>
+            </span>
+            <span class="audio-meta">
+              <span class="audio-tnum">I.</span>
+              <span class="audio-body">
+                <span class="audio-tt">Bevezető Tolkienhez</span>
+                <span class="audio-sub">Miért nem tudunk elszakadni Középföldétől · 2 perc 18 mp</span>
+              </span>
+            </span>
+            <span class="audio-wave" aria-hidden="true">
+              <svg viewBox="0 0 120 24" preserveAspectRatio="none" width="100%" height="24">
+                <g fill="currentColor">
+                  <rect x="2"   y="8"  width="2" height="8"/><rect x="8"   y="4"  width="2" height="16"/>
+                  <rect x="14"  y="10" width="2" height="4"/><rect x="20"  y="2"  width="2" height="20"/>
+                  <rect x="26"  y="9"  width="2" height="6"/><rect x="32"  y="6"  width="2" height="12"/>
+                  <rect x="38"  y="3"  width="2" height="18"/><rect x="44"  y="8"  width="2" height="8"/>
+                  <rect x="50"  y="5"  width="2" height="14"/><rect x="56"  y="10" width="2" height="4"/>
+                  <rect x="62"  y="4"  width="2" height="16"/><rect x="68"  y="7"  width="2" height="10"/>
+                  <rect x="74"  y="2"  width="2" height="20"/><rect x="80"  y="9"  width="2" height="6"/>
+                  <rect x="86"  y="6"  width="2" height="12"/><rect x="92"  y="3"  width="2" height="18"/>
+                  <rect x="98"  y="8"  width="2" height="8"/><rect x="104" y="5"  width="2" height="14"/>
+                  <rect x="110" y="10" width="2" height="4"/><rect x="116" y="6"  width="2" height="12"/>
+                </g>
+              </svg>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button type="button"
+                  class="audio-track"
+                  aria-pressed="false"
+                  data-label-play="Lejátszás: A mai esszém — Pilinszky és a fehér oldal, 3 perc 42 másodperc"
+                  data-label-pause="Szünet: A mai esszém"
+                  aria-label="Lejátszás: A mai esszém — Pilinszky és a fehér oldal, 3 perc 42 másodperc">
+            <span class="audio-play" aria-hidden="true">
+              <svg viewBox="0 0 20 24" width="14" height="16"><path fill="currentColor" d="M0 0 L20 12 L0 24 Z"/></svg>
+            </span>
+            <span class="audio-meta">
+              <span class="audio-tnum">II.</span>
+              <span class="audio-body">
+                <span class="audio-tt">A mai esszém — Pilinszky és a fehér oldal</span>
+                <span class="audio-sub">A csend, amit a korrektor nem húzhat ki · 3 perc 42 mp</span>
+              </span>
+            </span>
+            <span class="audio-wave" aria-hidden="true">
+              <svg viewBox="0 0 120 24" preserveAspectRatio="none" width="100%" height="24">
+                <g fill="currentColor">
+                  <rect x="2"  y="6"  width="2" height="12"/><rect x="8"  y="9"  width="2" height="6"/>
+                  <rect x="14" y="3"  width="2" height="18"/><rect x="20" y="8"  width="2" height="8"/>
+                  <rect x="26" y="5"  width="2" height="14"/><rect x="32" y="10" width="2" height="4"/>
+                  <rect x="38" y="4"  width="2" height="16"/><rect x="44" y="7"  width="2" height="10"/>
+                  <rect x="50" y="2"  width="2" height="20"/><rect x="56" y="9"  width="2" height="6"/>
+                  <rect x="62" y="6"  width="2" height="12"/><rect x="68" y="3"  width="2" height="18"/>
+                  <rect x="74" y="8"  width="2" height="8"/><rect x="80" y="5"  width="2" height="14"/>
+                  <rect x="86" y="10" width="2" height="4"/><rect x="92" y="6"  width="2" height="12"/>
+                  <rect x="98" y="3"  width="2" height="18"/><rect x="104" y="7" width="2" height="10"/>
+                  <rect x="110" y="9" width="2" height="6"/><rect x="116" y="5" width="2" height="14"/>
+                </g>
+              </svg>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button type="button"
+                  class="audio-track"
+                  aria-pressed="false"
+                  data-label-play="Lejátszás: Hangos olvasónapló, április, 5 perc 4 másodperc"
+                  data-label-pause="Szünet: Hangos olvasónapló"
+                  aria-label="Lejátszás: Hangos olvasónapló, április, 5 perc 4 másodperc">
+            <span class="audio-play" aria-hidden="true">
+              <svg viewBox="0 0 20 24" width="14" height="16"><path fill="currentColor" d="M0 0 L20 12 L0 24 Z"/></svg>
+            </span>
+            <span class="audio-meta">
+              <span class="audio-tnum">III.</span>
+              <span class="audio-body">
+                <span class="audio-tt">Hangos olvasónapló — április</span>
+                <span class="audio-sub">A hónap három könyve, kommentárral · 5 perc 04 mp</span>
+              </span>
+            </span>
+            <span class="audio-wave" aria-hidden="true">
+              <svg viewBox="0 0 120 24" preserveAspectRatio="none" width="100%" height="24">
+                <g fill="currentColor">
+                  <rect x="2"  y="5"  width="2" height="14"/><rect x="8"  y="8"  width="2" height="8"/>
+                  <rect x="14" y="2"  width="2" height="20"/><rect x="20" y="9"  width="2" height="6"/>
+                  <rect x="26" y="6"  width="2" height="12"/><rect x="32" y="3"  width="2" height="18"/>
+                  <rect x="38" y="10" width="2" height="4"/><rect x="44" y="4"  width="2" height="16"/>
+                  <rect x="50" y="7"  width="2" height="10"/><rect x="56" y="5"  width="2" height="14"/>
+                  <rect x="62" y="9"  width="2" height="6"/><rect x="68" y="6"  width="2" height="12"/>
+                  <rect x="74" y="3"  width="2" height="18"/><rect x="80" y="8"  width="2" height="8"/>
+                  <rect x="86" y="5"  width="2" height="14"/><rect x="92" y="10" width="2" height="4"/>
+                  <rect x="98" y="4"  width="2" height="16"/><rect x="104" y="7" width="2" height="10"/>
+                  <rect x="110" y="2" width="2" height="20"/><rect x="116" y="9" width="2" height="6"/>
+                </g>
+              </svg>
+            </span>
+          </button>
+        </li>
+      </ul>
+
+      <p class="audio-note">— Csak feliratkozóknak; a Kézirat Klub minden havi levelében érkezik egy új felvétel. —</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>„Az ember azért olvas, hogy megtudja: nincs egyedül.”</span> <span class="glyph">✿</span>
+    <span>Márai Sándor</span> <span class="glyph">✿</span>
+    <span>„A szó elszáll, a mondat megmarad.”</span> <span class="glyph">✿</span>
+    <span>Kosztolányi</span> <span class="glyph">✿</span>
+    <span>„Csak azt olvasd, amiért képes vagy térdre ereszkedni.”</span> <span class="glyph">✿</span>
+    <span>Pilinszky János</span> <span class="glyph">✿</span>
+    <span>„Az ember azért olvas, hogy megtudja: nincs egyedül.”</span> <span class="glyph">✿</span>
+    <span>Márai Sándor</span> <span class="glyph">✿</span>
+    <span>„A szó elszáll, a mondat megmarad.”</span> <span class="glyph">✿</span>
+    <span>Kosztolányi</span> <span class="glyph">✿</span>
+    <span>„Csak azt olvasd, amiért képes vagy térdre ereszkedni.”</span> <span class="glyph">✿</span>
+    <span>Pilinszky János</span> <span class="glyph">✿</span>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc-wrap" id="toc">
+  <div class="wrap">
+    <div class="toc-head reveal">
+      <div class="eyebrow center">Amit itt találsz</div>
+      <h2 class="toc-title">Hol kezdjük?</h2>
+    </div>
+    <div class="toc-grid">
+      <a href="#legujabb" class="toc-row reveal">
+        <div class="toc-num">01</div>
+        <div class="toc-body">
+          <h3>A legújabb videó</h3>
+          <span>E heti olvasmányom · kritika</span>
+        </div>
+        <div class="toc-page">→</div>
+      </a>
+      <a href="#polc" class="toc-row reveal delay-1">
+        <div class="toc-num">02</div>
+        <div class="toc-body">
+          <h3>Amit most ajánlok</h3>
+          <span>Hat kötet a polcomról</span>
+        </div>
+        <div class="toc-page">→</div>
+      </a>
+      <a href="#esszek" class="toc-row reveal delay-2">
+        <div class="toc-num">03</div>
+        <div class="toc-body">
+          <h3>Esszék és hosszabb írások</h3>
+          <span>Szabó Magda · YA · Pilinszky</span>
+        </div>
+        <div class="toc-page">→</div>
+      </a>
+      <a href="#esemenyek" class="toc-row reveal delay-3">
+        <div class="toc-num">04</div>
+        <div class="toc-body">
+          <h3>Felolvasóestek és események</h3>
+          <span>Budapest · Miskolc</span>
+        </div>
+        <div class="toc-page">→</div>
+      </a>
+      <a href="#kiadoknak" class="toc-row reveal delay-4">
+        <div class="toc-num">05</div>
+        <div class="toc-body">
+          <h3>Kiadóknak</h3>
+          <span>Korrektúra · ajánló · felolvasás</span>
+        </div>
+        <div class="toc-page">→</div>
+      </a>
+      <a href="#rolam" class="toc-row reveal delay-5">
+        <div class="toc-num">06</div>
+        <div class="toc-body">
+          <h3>Rólam</h3>
+          <span>Venczel-Tóth Evelin · Miskolc</span>
+        </div>
+        <div class="toc-page">→</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE -->
+<section class="quote-section">
+  <blockquote class="pull-quote copyable" tabindex="0" aria-label="Idézet másolása vágólapra" data-copy-attr="Márai Sándor">
+    Az ember azért <em>olvas</em>,<br/>
+    hogy megtudja:<br/>
+    nincs egyedül.
+  </blockquote>
+  <div class="attribution">Márai Sándor</div>
+</section>
+
+<!-- LEGÚJABB VIDEÓ -->
+<section class="section" id="legujabb">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num">E heti olvasmányom</div>
+      <h2 class="section-title">A <strong>legújabb</strong> videó</h2>
+    </div>
+    <p class="section-aside">Minden héten egy új könyv, egy új gondolat — őszintén, a szerkesztőségi szemüveg fel-le kapkodva.</p>
+  </div>
+
+  <div class="latest">
+    <div class="video-frame reveal" data-youtube="https://www.youtube.com/" style="background-image:url('assets/img/cozy-nook.jpg');">
+      <div class="video-title-overlay">
+        <div class="video-episode">
+          <span>Epizód No. 47</span>
+          <span>24 perc</span>
+        </div>
+        <div>
+          <div class="video-stamp">— Új videó —</div>
+          <div class="video-headline">J. R. R. Tolkien <em>A király visszatér</em> — mi az, ami húsz év után is működik?</div>
+        </div>
+      </div>
+      <button type="button" class="play-btn" aria-label="Videó lejátszása">
+        <svg width="28" height="32" viewBox="0 0 26 30" fill="currentColor">
+          <path d="M0 0 L26 15 L0 30 Z"/>
+        </svg>
+      </button>
+    </div>
+
+    <aside class="video-aside reveal delay-1">
+      <div>
+        <div class="aside-label">A szerkesztő jegyzetfüzetéből</div>
+        <p class="aside-body">Évek óta ígérem magamnak, hogy végre leülök a trilógia harmadik részével — és amikor megtettem, meglepett, hogy a fantasy-nyelv mennyire eltér a populáris olvasmányokétól. Ez a videó arról szól, miért nem tudunk elszakadni Középföldétől.</p>
+      </div>
+
+      <div class="now-reading">
+        <div class="nr-label">— Épp most olvasom —</div>
+        <div class="nr-title">A könyvtolvaj</div>
+        <div class="nr-author">Markus Zusak · 2005</div>
+        <div class="nr-progress"><div class="nr-progress-bar"></div></div>
+        <div class="nr-progress-text">
+          <span>212 / 344. oldal</span>
+          <span>62%</span>
+        </div>
+      </div>
+
+      <!-- Idézet-fiók — kifordítható drawer -->
+      <details class="quote-drawer">
+        <summary class="quote-drawer-toggle">
+          <span class="qd-label">— Az idézet-fiókból —</span>
+          <span class="qd-chevron" aria-hidden="true">
+            <svg viewBox="0 0 14 14" width="14" height="14"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M3 5 L7 9 L11 5"/></svg>
+          </span>
+        </summary>
+        <div class="quote-drawer-body">
+          <figure class="qd-card copyable" tabindex="0" aria-label="Idézet másolása" data-author="Kosztolányi Dezső">
+            <blockquote>Az ember belül úgy élhet, mint egy templomban.</blockquote>
+            <figcaption>— Kosztolányi Dezső · <cite>Novellák</cite></figcaption>
+          </figure>
+          <figure class="qd-card copyable" tabindex="0" aria-label="Idézet másolása" data-author="Pilinszky János">
+            <blockquote>A kevés szavú ember csak annyit mond, amennyiben biztos.</blockquote>
+            <figcaption>— Pilinszky János</figcaption>
+          </figure>
+          <figure class="qd-card copyable" tabindex="0" aria-label="Idézet másolása" data-author="Márai Sándor">
+            <blockquote>A könyv nem ad — csak visszaadja, ami benned volt.</blockquote>
+            <figcaption>— Márai Sándor · <cite>Füveskönyv</cite></figcaption>
+          </figure>
+          <button type="button" class="qd-shuffle" aria-label="Új idézetek">
+            <span aria-hidden="true">✿</span> új idézetek
+          </button>
+        </div>
+      </details>
+
+      <div class="aside-stats">
+        <div>
+          <div class="stat-num">2 647</div>
+          <div class="stat-label">Facebook-követő</div>
+        </div>
+        <div>
+          <div class="stat-num">6–7k</div>
+          <div class="stat-label">heti YouTube-néző</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="hr-ornament"><span class="glyph">✿</span></div>
+
+<!-- BENTO POLC -->
+<div class="wrap-warm" id="polc">
+  <section class="section">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">A polcról</div>
+        <h2 class="section-title">Amit most <strong>ajánlok</strong></h2>
+      </div>
+      <p class="section-aside">Klasszikustól kortársig — minden egyes kötetről személyesen, részletesen, hazugságok nélkül.</p>
+    </div>
+
+    <div class="bento">
+      <div class="tile feature reveal">
+        <div>
+          <div class="tile-label">— A hónap könyve —</div>
+          <h3 class="feature-title">A Gyűrűk Ura — A király visszatér</h3>
+          <div class="feature-author">J. R. R. Tolkien · 1955</div>
+          <div class="feature-gold-line"></div>
+          <p class="feature-excerpt">Szépirodalom vagy populáris? Érdekes kérdés, hova soroljuk Tolkien művét — a klasszikus irodalmi kánonba, vagy a tömegkultúrába? A válasz nem kézenfekvő, és pont ez az, ami miatt húsz év után is ehhez a trilógiához térünk vissza, ha nehéz éveket élünk meg.</p>
+          <div class="feature-meta">
+            <span>· 12 perc olvasás</span>
+            <span>· Fantasy</span>
+            <span>· 4.8 / 5</span>
+          </div>
+        </div>
+      </div>
+
+      <article class="tile book reveal delay-1">
+        <div class="book-spine spine-2"><span>Velünk véget ér</span></div>
+        <div class="book-info">
+          <div class="tile-label">— Kortárs —</div>
+          <h3>Amikor a szerelem bánt</h3>
+          <div class="author">Colleen Hoover · 2016</div>
+          <p class="verdict">Nem egyszerű szerelmi regény — olyan kérdéseket tesz fel, amelyekre nehéz válaszolni. Lily története sokakhoz szól.</p>
+          <div class="rating">★★★★<span class="empty">☆</span></div>
+        </div>
+      </article>
+
+      <article class="tile book reveal delay-2">
+        <div class="book-spine spine-4"><span>Semmi · Janne Teller</span></div>
+        <div class="book-info">
+          <div class="tile-label">— YA · díjnyertes —</div>
+          <h3>Minek van értelme?</h3>
+          <div class="author">Janne Teller · 2000</div>
+          <p class="verdict">Egy könyv, ami nem engedi el az olvasót — még hetekkel később sem. Teller kíméletlen pontossággal kérdez.</p>
+          <div class="rating">★★★★★</div>
+        </div>
+      </article>
+
+      <article class="tile book reveal delay-3">
+        <div class="book-spine spine-1"><span>Lókötők és hazugok</span></div>
+        <div class="book-info">
+          <div class="tile-label">— Kortárs magyar —</div>
+          <h3>Kívül-belül csodaszép</h3>
+          <div class="author">Szöges Emese · 2018</div>
+          <p class="verdict">Ritkán érkezik a kezünkbe könyv, ami tárgyként is műremek, és mondanivalójában is vérbő — ez az.</p>
+          <div class="rating">★★★★<span class="empty">☆</span></div>
+        </div>
+      </article>
+
+      <article class="tile book reveal delay-1">
+        <div class="book-spine spine-3"><span>A varázsló unokaöccse</span></div>
+        <div class="book-info">
+          <div class="tile-label">— Fantasy · klasszikus —</div>
+          <h3>Narnia hajnala</h3>
+          <div class="author">C. S. Lewis · 1955</div>
+          <p class="verdict">Az első kötet kronológiailag, de a hetedik, amit Lewis írt. Mégis ezzel kell kezdeni? Erre keresem a választ.</p>
+          <div class="rating">★★★★<span class="empty">☆</span></div>
+        </div>
+      </article>
+
+      <a href="#" class="tile cta-tile reveal delay-2">
+        <div class="cta-text">
+          <em>1 732</em> bejegyzés.<br/>
+          Tíz év kritika, szabadon kereshető.
+        </div>
+        <span class="cta-arrow">Teljes archívum →</span>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- 3D KÖNYVBORÍTÓ-POLC -->
+<section class="shelf3d" id="polcom" aria-label="Görgő könyvborító-polc">
+  <div class="shelf3d-head reveal">
+    <span class="chip terra">A polcom</span>
+    <h2 class="shelf3d-title">Ami a polcokon <em>sorakozik</em></h2>
+    <p class="shelf3d-sub">Évek olvasmányai, borítóról borítóra — gurítsd végig a szemed a gerinceken.</p>
+  </div>
+  <div class="bk-stage">
+    <div data-shelf></div>
+  </div>
+  <div class="shelf3d-hint" aria-hidden="true">— vidd a kurzort egy kötet fölé —</div>
+</section>
+
+<!-- ESSZÉK -->
+<section class="section" id="esszek">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num">Hosszabb gondolatok</div>
+      <h2 class="section-title">Esszék és <strong>hosszabb</strong> írások</h2>
+    </div>
+    <p class="section-aside">Ahol egy kritika rövid lenne, onnan indulnak el ezek a szövegek — kézen fogva, hátul a margón.</p>
+  </div>
+
+  <div class="essays">
+    <article class="essay reveal">
+      <div class="essay-issue">Esszé</div>
+      <h3 class="essay-title">A margóra írt olvasó — Szabó Magda és a női düh archívuma</h3>
+      <p class="essay-excerpt">Vannak írók, akiket nem elolvasni szoktunk, hanem túlélni. Szabó Magda hősnői nem szenvednek szépen: dörömbölnek a mondat falán, és a csend, ami utánuk marad, még évtizedek múlva is hangos.</p>
+      <div class="essay-meta">
+        <span>18 perc olvasás</span>
+        <span>Szabó Magda</span>
+      </div>
+    </article>
+
+    <article class="essay reveal delay-1">
+      <div class="essay-issue">Esszé</div>
+      <h3 class="essay-title">Miért fáj úgy egy jó YA regény — a felnőtt olvasó védelmében</h3>
+      <p class="essay-excerpt">Azt hittem, kinőttem belőle, aztán egy augusztusi délután három óráig sírtam egy tizenhét éves lány miatt, aki nincs is. A YA nem életkor kérdése; annak a küszöbnek a kérdése, amit mindannyian átléptünk.</p>
+      <div class="essay-meta">
+        <span>14 perc olvasás</span>
+        <span>YA</span>
+      </div>
+    </article>
+
+    <article class="essay reveal delay-2">
+      <div class="essay-issue">Esszé</div>
+      <h3 class="essay-title">Pilinszky és a fehér oldal — a csend, amit a korrektor nem húzhat ki</h3>
+      <p class="essay-excerpt">A szerkesztő dolga, hogy simára olvassa a szöveget; a költőé, hogy néha megtagadja. Pilinszkyvel dolgozni olyan, mint egy kivilágított templomban cipőben járni: az ember állandóan megütközik azon, hogy itt nem szabad eligazítani semmit.</p>
+      <div class="essay-meta">
+        <span>22 perc olvasás</span>
+        <span>Pilinszky</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ESEMÉNYEK -->
+<div class="wrap-fog" id="esemenyek">
+  <section class="section">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">Hol találkozunk</div>
+        <h2 class="section-title">Felolvasóestek <strong>&amp;</strong> események</h2>
+      </div>
+      <p class="section-aside">Ahol a könyvnek teste lesz — színpadon, gyertyafényben, hallgatóság előtt. Találkozzunk.</p>
+    </div>
+
+    <div class="events">
+      <a href="#" class="event reveal">
+        <div class="event-date">máj. 14<small>2026</small></div>
+        <div class="event-title">A lassú olvasás estéje — Kosztolányi-felolvasás gyertyafényben</div>
+        <div class="event-venue">Írók Boltja · Budapest</div>
+        <div class="event-cta">Jegy →</div>
+      </a>
+      <a href="#" class="event reveal delay-1">
+        <div class="event-date">jún. 07<small>2026</small></div>
+        <div class="event-title">Kézirat &amp; Kávé — beszélgetés szerkesztőkkel a szöveg titkos életéről</div>
+        <div class="event-venue">Párizsi Udvar · Budapest</div>
+        <div class="event-cta">Jegy →</div>
+      </a>
+      <a href="#" class="event reveal delay-2">
+        <div class="event-date">szept. 19<small>2026</small></div>
+        <div class="event-title">Bábok és betűk — az írott szó színpadi teste</div>
+        <div class="event-venue">Miskolci Könyvfesztivál</div>
+        <div class="event-cta">Jegy →</div>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- KIADÓKNAK / SZOLGÁLTATÁSOK -->
+<section class="section" id="kiadoknak">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num">A szakmának</div>
+      <h2 class="section-title">Szolgáltatásaim <strong>kiadóknak</strong></h2>
+    </div>
+    <p class="section-aside">Korrektúra, ajánló, jelenlét — három mód arra, hogy a kötet eljusson azokhoz, akiknek készült.</p>
+  </div>
+
+  <div class="services">
+    <div class="service reveal">
+      <div class="service-name">Korrektúra és szerkesztés</div>
+      <p class="service-desc">Lassú, figyelmes olvasás — mondatról mondatra, míg a kézirat végre abban a ritmusban lélegzik, amelyben a szerző megálmodta.</p>
+      <div class="service-for">a szövegnek nemcsak javítás kell, hanem olvasó is, aki tudja, mitől könyv a könyv.</div>
+    </div>
+    <div class="service reveal delay-1">
+      <div class="service-name">Könyvajánló videók — kampánytársítással</div>
+      <p class="service-desc">Őszinte, kézműves ajánlók a YouTube-csatornámra és közösségi felületeimre, beágyazva a kötet megjelenési ritmusába.</p>
+      <div class="service-for">a kampányhoz nem hirdetés kell, hanem egy olvasó hangja, akinek hisznek.</div>
+    </div>
+    <div class="service reveal delay-2">
+      <div class="service-name">Bábszínészi felolvasás · élő események</div>
+      <p class="service-desc">Színpadra írt hangon szólaltatom meg a szöveget — könyvbemutatón, fesztiválon, kamara-esten, ott, ahol a szónak teste lesz.</p>
+      <div class="service-for">a kötetnek nemcsak megjelenésre van szüksége, hanem jelenlétre is.</div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top: 60px;">
+    <a href="mailto:pergamenrehanytszavak@gmail.com?subject=Együttműködés" class="btn-primary">
+      Kérje a médiakitet
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- SAJTÓBAN -->
+<div class="wrap-warm">
+  <section class="section" style="padding-top: 90px; padding-bottom: 90px;">
+    <div class="eyebrow center reveal" style="margin-bottom: 48px;">Rólam írták</div>
+    <div class="press-grid">
+      <div class="press-card warm-shadow reveal">
+        <div class="press-outlet">M2 Booktuberek</div>
+        <div class="press-year">Televízió · 2022</div>
+        <p class="press-quote">A magyar booktube-jelenet egyik legmeghatározóbb hangja — szakmai háttérrel és kristálytiszta ízléssel.</p>
+      </div>
+      <div class="press-card warm-shadow reveal delay-1">
+        <div class="press-outlet">Európa Rádió</div>
+        <div class="press-year">Rádió · 2023</div>
+        <p class="press-quote">Őszinte, szakmai igényességgel készülő kritikák — a magyar könyves blogoszféra kiemelkedő szereplője.</p>
+      </div>
+      <div class="press-card warm-shadow reveal delay-2">
+        <div class="press-outlet">BOON.hu</div>
+        <div class="press-year">Portré · 2021</div>
+        <p class="press-quote">Miskolci korrektor-szerkesztő, bábszínész, aki évről évre ezreket terel a könyvek mellé.</p>
+      </div>
+      <div class="press-card warm-shadow reveal delay-3">
+        <div class="press-outlet">Könyvhét</div>
+        <div class="press-year">Nyomtatott · 2024</div>
+        <p class="press-quote">Venczel-Tóth Evelin blogja a kiadói szakma és az olvasó között egy ritka, őszinte hidat épít.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- INSPIRÁCIÓ / PANTHEON -->
+<section class="section" id="pantheon">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num">Kedvenceim</div>
+      <h2 class="section-title">Akikhez <strong>mindig</strong> visszatérek</h2>
+    </div>
+    <p class="section-aside">A szerzők, akiknek a műveit újra és újra elővesszük — mert minden olvasással új rétegüket fedezzük fel.</p>
+  </div>
+
+  <div class="authors-grid">
+    <div class="author-tile reveal" data-quote="„Minden Egész eltörött, minden láng csak részekben lobban.”">
+      <div class="author-name">Ady Endre</div>
+      <div class="author-era">1877 – 1919</div>
+    </div>
+    <div class="author-tile reveal delay-1" data-quote="„Az ember belül úgy élhet, mint egy templomban.”">
+      <div class="author-name">Kosztolányi<br/>Dezső</div>
+      <div class="author-era">1885 – 1936</div>
+    </div>
+    <div class="author-tile reveal delay-2" data-quote="„A szavak, amiket igazán gondolunk, örökké megmaradnak.”">
+      <div class="author-name">Emily Brontë</div>
+      <div class="author-era">1818 – 1848</div>
+    </div>
+    <div class="author-tile reveal delay-3" data-quote="„Még az apró emberek is megváltoztathatják a történelem menetét.”">
+      <div class="author-name">J. R. R.<br/>Tolkien</div>
+      <div class="author-era">1892 – 1973</div>
+    </div>
+    <div class="author-tile reveal delay-1" data-quote="„A világ végén is lesz egy mondat, amit muszáj lesz leírni.”">
+      <div class="author-name">Háy János</div>
+      <div class="author-era">*1960</div>
+    </div>
+    <div class="author-tile reveal delay-2" data-quote="„A humor a legelegánsabb felmentés.”">
+      <div class="author-name">Vavyan Fable</div>
+      <div class="author-era">*1956</div>
+    </div>
+    <div class="author-tile reveal delay-3" data-quote="„A könyv olyan, mint az ajtó — de csak annak nyílik, aki kéri.”">
+      <div class="author-name">Böszörményi<br/>Gyula</div>
+      <div class="author-era">*1964</div>
+    </div>
+    <div class="author-tile reveal delay-4" data-quote="„Egyes történetek csak a szívben tudnak elférni.”">
+      <div class="author-name">Diana<br/>Gabaldon</div>
+      <div class="author-era">*1952</div>
+    </div>
+  </div>
+</section>
+
+<!-- KÉZIRAT KLUB -->
+<section class="newsletter-wrap" id="klub">
+  <div class="newsletter-frame reveal">
+    <div class="wax-seal">
+      <div class="wax-seal-label">Ingyenes</div>
+      <div class="wax-seal-main">10 könyv,<br/>ami megéri</div>
+    </div>
+
+    <div class="nl-left">
+      <div class="nl-kicker">— A Kézirat Klub —</div>
+      <h2 class="nl-title">Nem hírlevél — inkább <strong>levél</strong>.</h2>
+      <p class="nl-lede">Havonta egyszer, borítékban, ha a posta szárnyasabb volna. Olvasott mondatok, félbehagyott kéziratok titkai, egy-egy bekezdés, amit sehol máshol nem írok le. A Kézirat Klub azoknak készül, akik még mindig azt hiszik: egy jó ajánló annyit ér, mint egy jó beszélgetés éjfél után.</p>
+    </div>
+
+    <div class="nl-right">
+      <div class="nl-perks">
+        <div class="nl-perk"><span class="nl-perk-mark"></span><span><strong>Havonta egy levél</strong> — soha nem spam, soha nem automata.</span></div>
+        <div class="nl-perk"><span class="nl-perk-mark"></span><span><strong>Előolvasás</strong> — a friss kritikákat előbb kapod meg, mint a nyilvánosság.</span></div>
+        <div class="nl-perk"><span class="nl-perk-mark"></span><span><strong>Ajándék PDF</strong> — 10 könyv, amit ha most adnak ki, azonnal elolvasok.</span></div>
+      </div>
+
+      <form class="nl-form">
+        <input type="email" name="email" class="nl-input" placeholder="a te e-mail címed" autocomplete="email" aria-label="A te e-mail címed" required>
+        <button type="submit" class="nl-btn">feliratkozom</button>
+      </form>
+      <p class="nl-note">feliratkozáskor megérkezik a PDF is</p>
+    </div>
+  </div>
+</section>
+
+<!-- RÓLAM -->
+<div class="wrap-warm" id="rolam">
+  <section class="section">
+    <div class="about">
+      <div class="portrait reveal" style="background-image:url('assets/img/about-portrait.jpg');">
+        <div class="portrait-caption">Evelin portréja<br/>— ide kerül a fotó —</div>
+      </div>
+
+      <div class="about-text reveal delay-1">
+        <div class="section-num">Rólam</div>
+        <h2 class="about-heading">Venczel-Tóth<br/>Evelin<small>Miskolc · Magyarország</small></h2>
+
+        <p style="font-family:var(--serif-display); font-style:italic; font-size:24px; line-height:1.4; color:var(--ink); margin-bottom:32px; max-width:38ch;">
+          Vannak, akik beszélgetni szeretnek a könyvekről; én együtt élek velük.
+        </p>
+
+        <p>Korrektor vagyok és szerkesztő, bábszínész és olvasó — ebben a sorrendben, vagy épp a fordítottjában, attól függ, melyik nap melyik fényben talál. Miskolcon élek, egy nagyanyámtól örökölt íróasztalnál, ahol a kéziratok és a színlapok ugyanabban a kupacban várnak rám. 2016 óta írok a <em>Pergamenre hányt szavak</em> néven az olvasmányaimról — eleinte magamnak, aztán már nem tudtam abbahagyni.</p>
+
+        <p>A mondatokban hiszek. Abban a csendben, ami két jó bekezdés között támad; abban a figyelemben, amivel az ember elolvas egy könyvet, mielőtt véleménye lenne róla. Dolgoztam kiadóknak és szerzőknek, felolvastam színpadon és gyertyafénynél, beszéltem a könyvekről az <em>M2 Booktuberek</em> képernyőjén, az <em>Európa Rádióban</em>, a <em>BOON</em> hasábjain — de a legfontosabb mondatokat még mindig itt, ezen az oldalon próbálom leírni.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">'16</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-label">Első blogbejegyzés</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">'19</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-label">BOON portré</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">'22</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-label">M2 Booktuberek</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">'26</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-label">1 732 bejegyzés</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PARTNEREK -->
+<section class="partners">
+  <div class="partners-title">— Együttműködő kiadók —</div>
+  <div class="partners-list">
+    <span class="partner">Colorcom</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Libri</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Maxim</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Kolibri</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Fumax</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Agave</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Athenaeum</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Édesvíz</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Jelenkor</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Galaktika</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">Könyvmolyképző</span>
+    <span class="partner-sep">✿</span>
+    <span class="partner">21. Század</span>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Pergamenre<br/>hányt szavak</div>
+      <p class="footer-tag">Könyvekről, őszintén — egy korrektor-szerkesztő szemével. Miskolcról a világnak, 2016 óta.</p>
+      <div class="footer-sig">— Venczel-Tóth Evelin —</div>
+    </div>
+    <div class="footer-col">
+      <h4>Oldalak</h4>
+      <a href="/kritikak">Kritikák</a>
+      <a href="/esszek">Esszék</a>
+      <a href="/videok">Videók</a>
+      <a href="/esemenyek">Események</a>
+      <a href="/rolam">Rólam</a>
+      <a href="/kiadoknak">Kiadóknak</a>
+    </div>
+    <div class="footer-col">
+      <h4>Kövess</h4>
+      <a href="#">YouTube</a>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Moly</a>
+      <a href="#">Spotify</a>
+    </div>
+    <div class="footer-col">
+      <h4>Kapcsolat</h4>
+      <a href="mailto:pergamenrehanytszavak@gmail.com">pergamenre<br/>hanytszavak<br/>@gmail.com</a>
+      <a href="/kiadoknak">Kiadóknak</a>
+      <a href="/kiadoknak">Médiakit</a>
+      <a href="/kapcsolat">Felolvasóestek</a>
+    </div>
+  </div>
+
+  <div class="colophon">
+    <div class="colophon-flourish" aria-hidden="true">✿&nbsp;&nbsp;·&nbsp;&nbsp;✿&nbsp;&nbsp;·&nbsp;&nbsp;✿</div>
+    <p>Itt a könyvek nem státuszszimbólumok, hanem társak. Ez az oldal egy hely, ahol lassan olvasunk, őszintén beszélünk, és nem szégyelljük, ha egy regény miatt sírunk a buszon.</p>
+    <p class="colophon-meta">Köszönöm, hogy benéztél. Maradj, lapozz, írj — és olvass valami szépet ma este.</p>
+    <p class="colophon-sig"><span class="colophon-signature">Venczel-Tóth Evelin</span><br/><span class="colophon-year">Miskolc · 2016 óta</span></p>
+  </div>
+
+  <div class="footer-bottom">
+    <div>© 2026 · Pergamenre hányt szavak</div>
+    <div class="ornament">✿</div>
+    <div>Venczel-Tóth Evelin · Miskolc</div>
+  </div>
+</footer>
+
+<!-- folio marks -->
+
+<!-- Copy-flash toast for click-to-copy quotes (aria-live announces) -->
+<div class="copy-flash" id="copyFlash" role="status" aria-live="polite">Másolva a vágólapra</div>
+
+<script src="assets/main.js" defer></script>
+<script src="assets/shelf.js" defer></script>
+<script type="module" src="assets/motion.js"></script>
+
+<!-- Reveal safety-net: content is NEVER left hidden, even if the CDN/animation layer fails -->
+<script>
+(function () {
+  function revealAll(){ document.querySelectorAll('.reveal').forEach(function(e){ e.classList.add('in-view'); }); }
+  function start(){
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in-view'); io.unobserve(en.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.reveal').forEach(function(e){ io.observe(e); });
+    } else { revealAll(); }
+    // hard safety nets — nothing stays invisible
+    window.addEventListener('load', function(){ setTimeout(revealAll, 1400); });
+    setTimeout(revealAll, 2600);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
+})();
+</script>
+</body>
+</html>
+

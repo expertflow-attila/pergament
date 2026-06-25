@@ -1,0 +1,363 @@
+/* =====================================================
+   PRINT — magazin-szedésű nyomtatási stíluslap
+   Triggered by: <link rel="stylesheet" media="print" href="assets/print.css">
+   ===================================================== */
+
+@page { size: A4; margin: 20mm 18mm 22mm 18mm; }
+@page :first { margin-top: 28mm; }
+
+/* widows & orphans for softer break handling */
+p, blockquote, li { orphans: 3; widows: 3; }
+
+/* Hide everything that doesn't belong on paper */
+.concept-banner,
+.topnav,
+.read-progress,
+.folio,
+.marquee,
+.ink-splatter,
+.wax-seal,
+.hero-cta-row,
+.video-frame,
+.play-btn,
+.btn-primary, .btn-ghost, .btn-link,
+.nl-form,
+.nl-btn,
+.audio-companion,
+.quote-drawer,
+.editio-badge,
+.now-reading,
+.aside-stats,
+.partners,
+.hr-ornament,
+.divider-fade,
+.cta-tile,
+.feature-gold-line,
+.quill-wrap svg,
+.hero::after,
+.hero-logo-ornament,
+.marquee-track,
+.footer-col,
+.footer-bottom,
+.topnav.hidden {
+  display: none !important;
+}
+
+/* Strip backgrounds, shadows, noise. Force color fidelity on Chromium. */
+html, body {
+  background: #FFFFFF !important;
+  color: #1F1A13 !important;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+body::before { display: none !important; }
+
+section, header, footer, main, .wrap-warm, .wrap-fog,
+.tile, .reviews-wrap, .about-wrap, .press-wrap,
+.quote-section, .hero, .toc-wrap, .newsletter-wrap,
+.audio-frame {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 0 18pt 0 !important;
+  max-width: none !important;
+}
+
+/* Masthead — keep as magazine nameplate */
+.masthead {
+  display: block !important;
+  padding: 0 0 8pt 0 !important;
+  border-bottom: 1.5pt double #1F1A13 !important;
+  text-align: center !important;
+}
+.masthead-meta, .masthead-tag {
+  display: inline !important;
+  font-size: 8.5pt !important;
+  color: #6A5B44 !important;
+  letter-spacing: 0.25em !important;
+  text-transform: uppercase !important;
+}
+.masthead-meta::after { content: "   ·   "; color: #9F8754; }
+.masthead-rules { display: none !important; }
+
+/* Hero logo in print — reduced, centered, no ornaments */
+.hero-logo {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 48pt !important;
+  text-align: center !important;
+  line-height: 1.02 !important;
+  margin: 14pt 0 4pt !important;
+  color: #1F1A13 !important;
+  max-width: none !important;
+}
+.hero-logo .line2 {
+  font-size: 0.8em !important;
+  padding-left: 1.2em;
+}
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 13pt !important;
+  margin: 4pt 0 20pt !important;
+  text-align: center !important;
+  color: #4A3F31 !important;
+  max-width: none !important;
+}
+.hero .eyebrow { display: block !important; text-align: center; font-size: 8pt; margin-bottom: 6pt; }
+
+/* Pull quote — treat as sidebar blockquote */
+.pull-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 18pt !important;
+  line-height: 1.25 !important;
+  margin: 14pt auto !important;
+  max-width: 44ch !important;
+  text-align: center;
+  border-top: 0.5pt solid #D4C4A3;
+  border-bottom: 0.5pt solid #D4C4A3;
+  padding: 10pt 0 !important;
+}
+.pull-quote em { color: #8A3434 !important; }
+.attribution {
+  text-align: center;
+  font-size: 8pt !important;
+  color: #6A5B44 !important;
+}
+
+/* Section headings */
+.section-num {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 8pt !important;
+  color: #6A5B44 !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase;
+  margin-bottom: 4pt;
+  display: block;
+}
+.section-num::before { display: none !important; }
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 22pt !important;
+  line-height: 1.05 !important;
+  margin-bottom: 8pt;
+  letter-spacing: -0.01em;
+  color: #1F1A13 !important;
+  break-after: avoid;
+}
+.section-aside {
+  font-style: italic;
+  font-size: 10pt !important;
+  color: #4A3F31 !important;
+  margin-bottom: 10pt;
+  text-align: left !important;
+  max-width: none;
+}
+.section-head {
+  grid-template-columns: 1fr !important;
+  display: block !important;
+  border-bottom: 0.5pt solid #1F1A13 !important;
+  padding-bottom: 6pt !important;
+  margin-bottom: 14pt !important;
+}
+
+/* Latest video summary — text only */
+.latest { display: block !important; }
+.video-aside {
+  padding: 0 !important;
+  border: none !important;
+  display: block !important;
+}
+.aside-label {
+  font-size: 8pt !important;
+  letter-spacing: 0.3em !important;
+  color: #6A5B44 !important;
+  font-style: italic;
+  display: block;
+  margin-bottom: 4pt;
+}
+.aside-body {
+  font-family: 'Lora', serif;
+  font-size: 10.5pt !important;
+  line-height: 1.55 !important;
+  column-count: 2;
+  column-gap: 16pt;
+  column-rule: 0.6pt solid #9F8754;
+  text-align: justify;
+  hyphens: auto;
+  orphans: 3;
+  widows: 3;
+}
+.aside-body::first-letter {
+  font-family: 'Italiana', 'Cormorant Garamond', serif;
+  font-style: normal;
+  font-size: 34pt !important;
+  line-height: 0.85;
+  padding: 4pt 6pt 0 0 !important;
+  float: left;
+  color: #1F1A13;
+}
+
+/* TOC — keep as a magazine contents page */
+.toc-wrap { page-break-after: always; }
+.toc-head { margin-bottom: 12pt; }
+.toc-title {
+  font-family: 'Italiana', serif;
+  font-size: 20pt !important;
+  text-align: center;
+}
+.toc-grid { display: block !important; }
+.toc-row {
+  display: grid !important;
+  grid-template-columns: 24pt 1fr 36pt !important;
+  gap: 12pt !important;
+  padding: 6pt 0 !important;
+  border-bottom: 0.25pt dotted #D4C4A3 !important;
+  color: #1F1A13 !important;
+  text-decoration: none;
+  break-inside: avoid;
+}
+.toc-row:hover { background: transparent !important; padding-left: 0 !important; }
+.toc-num { font-family: 'Italiana', serif; font-size: 12pt !important; color: #9F8754 !important; }
+.toc-body h3 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 11pt !important; color: #1F1A13 !important; margin: 0; }
+.toc-body span { font-size: 7.5pt !important; letter-spacing: 0.18em; text-transform: uppercase; color: #6A5B44 !important; }
+.toc-page { font-size: 8pt !important; color: #6A5B44; letter-spacing: 0.25em; }
+
+/* Essays — two-column magazine prose */
+.essays { display: block !important; column-count: 2; column-gap: 16pt; column-rule: 0.6pt solid #9F8754; }
+.essay { break-inside: avoid; border-top: 0.75pt solid #1F1A13 !important; padding-top: 6pt; margin-bottom: 10pt; orphans: 3; widows: 3; }
+.essay-issue { font-size: 7.5pt !important; color: #7E6A3F; letter-spacing: 0.3em; }
+.essay-title { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14pt !important; line-height: 1.2; margin: 4pt 0 6pt; color: #1F1A13; }
+.essay-excerpt { font-size: 10pt !important; line-height: 1.5; color: #4A3F31; }
+.essay-meta { font-size: 7.5pt !important; letter-spacing: 0.25em; text-transform: uppercase; color: #6A5B44; margin-top: 4pt; display: flex; justify-content: space-between; }
+
+/* Authors grid — plain bulleted list */
+.authors-grid {
+  display: block !important;
+  border: none !important;
+  background: none !important;
+  column-count: 2;
+}
+.author-tile { display: block !important; padding: 6pt 0 !important; border: none !important; background: none !important; text-align: left !important; break-inside: avoid; }
+.author-tile::before { display: none !important; }
+.author-name { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12pt !important; }
+.author-era { font-size: 8pt !important; color: #6A5B44; letter-spacing: 0.25em; }
+
+/* Press cards */
+.press-grid { display: grid !important; grid-template-columns: 1fr 1fr; gap: 10pt; }
+.press-card { break-inside: avoid; padding: 6pt 0 !important; border: none !important; box-shadow: none !important; background: none !important; border-top: 0.5pt solid #1F1A13 !important; }
+.press-outlet { font-family: 'Italiana', serif; font-size: 12pt !important; }
+.press-year { font-size: 7.5pt !important; letter-spacing: 0.3em; color: #9F8754; }
+.press-quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 10pt !important; color: #4A3F31; }
+
+/* Services */
+.services { display: block !important; border: 0.5pt solid #1F1A13 !important; padding: 10pt !important; }
+.service { display: block !important; border: none !important; padding: 6pt 0 !important; border-bottom: 0.25pt dotted #D4C4A3 !important; break-inside: avoid; }
+.service:last-child { border-bottom: none !important; }
+.service::before { display: none !important; }
+.service-name { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13pt !important; margin-bottom: 4pt; color: #1F1A13; }
+.service-desc { font-size: 10pt !important; color: #4A3F31; margin-bottom: 4pt; }
+.service-for { font-size: 8pt !important; color: #7E6A3F; letter-spacing: 0.15em; border: none !important; padding: 0 !important; }
+
+/* Events */
+.events { display: block !important; border: none !important; }
+.event { display: grid !important; grid-template-columns: 90pt 1fr; gap: 12pt !important; padding: 6pt 0 !important; border-bottom: 0.25pt dotted #D4C4A3 !important; break-inside: avoid; }
+.event-venue { font-size: 8pt !important; color: #6A5B44; letter-spacing: 0.18em; grid-column: 2; }
+.event-title { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12pt !important; grid-column: 2; }
+.event-date { font-family: 'Italiana', serif; font-size: 14pt !important; }
+.event-cta { display: none !important; }
+
+/* Bento → plain list */
+.bento, .reviews-wrap, .press-wrap { break-before: auto; break-inside: auto; }
+.bento { display: block !important; }
+.tile { display: block !important; border: none !important; padding: 6pt 0 !important; margin-bottom: 10pt !important; break-inside: avoid; border-top: 0.75pt solid #1F1A13 !important; orphans: 3; widows: 3; }
+.tile.feature { background: none !important; color: #1F1A13 !important; }
+.tile.feature .tile-label,
+.feature-author,
+.feature-meta { color: #6A5B44 !important; }
+.book-spine { display: none !important; }
+.book-info { padding: 0 !important; }
+.book-info h3 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12pt !important; color: #1F1A13; }
+.book-info .author { font-size: 8pt !important; color: #7E6A3F; }
+.book-info .verdict { font-size: 10pt !important; color: #4A3F31; }
+.feature-title { font-size: 15pt !important; margin-bottom: 4pt; }
+.feature-excerpt { font-size: 10pt !important; color: #4A3F31; border: none !important; padding: 4pt 0 !important; margin: 0 !important; }
+.rating { color: #9F8754 !important; font-family: 'Italiana', serif; }
+
+/* About */
+.about { display: block !important; }
+.portrait { display: none !important; }
+.about-heading {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 36pt !important;
+  line-height: 1 !important;
+  color: #1F1A13 !important;
+  margin-bottom: 8pt !important;
+}
+.about-heading small {
+  display: block;
+  font-family: 'EB Garamond', serif;
+  font-size: 8pt !important;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #9F8754 !important;
+  margin-top: 6pt;
+}
+.about-text p {
+  font-size: 10.5pt !important;
+  line-height: 1.55;
+  color: #4A3F31;
+  margin-bottom: 8pt;
+}
+.about-text p:first-of-type::first-letter {
+  font-family: 'Italiana', serif;
+  font-size: 40pt !important;
+  padding: 4pt 6pt 0 0 !important;
+  line-height: 0.85;
+}
+.timeline { display: flex !important; gap: 10pt; margin-top: 10pt; border-top: 0.5pt solid #D4C4A3; padding-top: 6pt; }
+.timeline::before { display: none !important; }
+.timeline-item { flex: 1; text-align: center; }
+.timeline-year { font-family: 'Italiana', serif; font-size: 14pt !important; color: #1F1A13; }
+.timeline-dot { display: none !important; }
+.timeline-label { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 9pt !important; color: #4A3F31; }
+
+/* Colophon */
+.footer { display: block !important; padding: 0 !important; margin-top: 16pt; border-top: 0.5pt solid #1F1A13 !important; }
+.footer-grid, .footer-bottom { display: none !important; }
+.colophon {
+  display: block !important;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 8.5pt !important;
+  color: #4A3F31 !important;
+  line-height: 1.4;
+  max-width: none !important;
+  padding-top: 6pt !important;
+  margin: 0 auto !important;
+  text-align: center;
+}
+.colophon-num { color: #8A3434; }
+.colophon-flourish { color: #1F1A13 !important; font-size: 10pt !important; margin-bottom: 6pt; }
+.colophon-sig { border-top: 0.4pt solid #8A7A55 !important; margin-top: 10pt !important; padding-top: 6pt !important; }
+.colophon-signature { font-family: 'Pinyon Script', cursive; font-size: 16pt !important; color: #1F1A13 !important; }
+.colophon-year { font-size: 7.5pt !important; letter-spacing: 0.3em; color: #7E6A3F; }
+#visitCount { display: none; }  /* session-specific, not printed */
+
+/* Links — show URL inline for off-line reference */
+a[href^="http"]:not(.topnav a):not(.nav-mark)::after {
+  content: " (" attr(href) ")";
+  font-size: 0.75em;
+  color: #6A5B44;
+}
+a { color: #1F1A13 !important; text-decoration: none !important; }
+
+/* Hide any leftover emoji/svg decorations */
+.ornament-glyph, .quill-wrap svg { display: none !important; }
