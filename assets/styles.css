@@ -201,6 +201,7 @@ body::before { content: none; }
 
 /* concept banner — slim sunlit ticker */
 .concept-banner {
+  display: none; /* fejlécből eltávolítva (kérésre) */
   position: fixed;
   top: 0; left: 0; right: 0;
   background: var(--marigold);
@@ -278,8 +279,8 @@ body::before { content: none; }
 .masthead {
   position: relative; z-index: 2;
   padding: 150px var(--gutter) 8px;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 24px;
   font-family: var(--sans);

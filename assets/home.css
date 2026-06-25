@@ -236,7 +236,7 @@
 .section { position: relative; z-index: 2; padding: 120px var(--gutter); max-width: var(--max); margin: 0 auto; }
 
 /* ---------- LATEST VIDEO + aside ---------- */
-.latest { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: stretch; }
+.latest { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: start; }
 .video-frame {
   aspect-ratio: 16/9; background: var(--paper-warm) center/cover no-repeat;
   position: relative; border-radius: var(--radius-large); box-shadow: var(--shadow-image-bloom);
@@ -264,7 +264,7 @@
 @keyframes pulse-ring { 0% { transform: scale(0.92); opacity: 0.5; } 100% { transform: scale(1.25); opacity: 0; } }
 .play-btn:hover { background: var(--ink); color: #fff; transform: translate(-50%, -50%) scale(1.08); }
 
-.video-aside { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
+.video-aside { display: flex; flex-direction: column; justify-content: flex-start; gap: 32px; }
 .aside-label { font-family: var(--sans); font-weight: 600; font-size: 14px; letter-spacing: 0.7px; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
 .aside-body { font-family: var(--sans); font-size: 19px; line-height: 1.55; color: var(--ink-soft); }
 .aside-body::first-letter { float: left; font-family: var(--serif-display); font-weight: 400; font-size: 80px; line-height: 0.7; padding: 10px 14px 0 0; color: var(--accent); }
