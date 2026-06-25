@@ -18,10 +18,14 @@ terjed ki.
 - `assets/main.js`, `assets/shelf.js`, `assets/motion.js`
 - `manifest.webmanifest`
 
+### Logó / ikonok (ebben a repóban újragenerálva)
+- `favicon.svg` + `favicon-16/32.png`, `apple-touch-icon.png`, `icon-192/512.png` — új logó
+  a mostani palettában (marigold korong, tinta „§" szerkesztői jel, levendula tintacsepp).
+  A fejlécbe is bekerült (a „Pergamen" felirat mellé), minden oldalon (megosztott `main.js`).
+
 ### Még hiányzik (a kanonikus repóból kell áthozni)
-- **Képek (bináris):** `assets/img/hero-portrait.jpg`, `cozy-nook.jpg`, `about-portrait.jpg`,
-  `assets/books/book-1.jpg … book-15.jpg`, `favicon*`, `apple-touch-icon*`, `og-image.jpg`,
-  `icon-192.png`, `icon-512.png` — ezeket szövegként nem lehetett letölteni.
+- **Fotók (bináris):** `assets/img/hero-portrait.jpg`, `cozy-nook.jpg`, `about-portrait.jpg`,
+  `assets/books/book-1.jpg … book-15.jpg`, `og-image.jpg` — ezeket szövegként nem lehetett letölteni.
 - **Aloldalak:** `/kritikak`, `/esszek`, `/videok`, `/esemenyek`, `/rolam`, `/kiadoknak`,
   `/kapcsolat` (külön HTML-ek) + `assets/pages.css`.
 

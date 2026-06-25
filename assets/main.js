@@ -79,6 +79,22 @@
     document.body.appendChild(menu);
   })();
 
+  /* --- Brand mark in the nav — injected so every page shows the logo
+         next to the "Pergamen" wordmark. Text stays as the accessible name. --- */
+  (function navLogo() {
+    const mark = document.querySelector('.nav-mark');
+    if (!mark || mark.querySelector('svg')) return;
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '0 0 64 64');
+    svg.setAttribute('class', 'nav-mark-logo');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.innerHTML =
+      '<circle cx="32" cy="32" r="32" fill="#fbcb6e"/>' +
+      '<circle cx="20" cy="18" r="3" fill="#a5abf9"/>' +
+      '<text x="33" y="47" text-anchor="middle" font-family="\'Instrument Serif\', Georgia, serif" font-style="italic" font-size="44" fill="#0e0e0e">§</text>';
+    mark.insertBefore(svg, mark.firstChild);
+  })();
+
   /* --- scroll progress + topnav hide/show + glass-deepen --- */
   const progress = document.getElementById('readProgress');
   const topnav = document.getElementById('topnav');

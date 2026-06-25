@@ -274,6 +274,10 @@ body::before { content: none; }
   padding: 0 !important;
 }
 .nav-mark:hover { background: transparent !important; }
+/* brand mark (injected by main.js) + wordmark lockup */
+.nav-mark { display: inline-flex; align-items: center; gap: 9px; }
+.nav-mark-logo { width: 30px; height: 30px; flex: 0 0 auto; display: block; }
+@media (max-width: 900px) { .nav-mark-logo { width: 26px; height: 26px; } }
 
 /* ---------- MASTHEAD ---------- */
 .masthead {
