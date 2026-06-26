@@ -90,8 +90,10 @@
     svg.setAttribute('aria-hidden', 'true');
     svg.innerHTML =
       '<circle cx="32" cy="32" r="32" fill="#fbcb6e"/>' +
-      '<circle cx="20" cy="18" r="3" fill="#a5abf9"/>' +
-      '<text x="33" y="47" text-anchor="middle" font-family="\'Instrument Serif\', Georgia, serif" font-style="italic" font-size="44" fill="#0e0e0e">§</text>';
+      '<path d="M40 8 C 22 19, 17 38, 25 51 C 41 45, 52 23, 40 8 Z" fill="#0e0e0e"/>' +
+      '<path d="M40 8 C 31 23, 27 38, 24.5 52" stroke="#fbcb6e" stroke-width="1.6" fill="none" stroke-linecap="round"/>' +
+      '<path d="M24.5 52 L 20 58" stroke="#0e0e0e" stroke-width="2.6" fill="none" stroke-linecap="round"/>' +
+      '<circle cx="38" cy="55" r="1.7" fill="#0e0e0e"/><circle cx="44" cy="58" r="1.1" fill="#0e0e0e"/>';
     mark.insertBefore(svg, mark.firstChild);
   })();
 
