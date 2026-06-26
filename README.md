@@ -3,6 +3,22 @@
 Venczel-Tóth Evelin könyves blogja / booktube oldala.
 Élő oldal: <https://pergamen-site-premium.vercel.app>
 
+## 👀 Előnézet — a legfrissebb állapot (valódi betűkkel renderelve)
+
+### Asztali — a kezdőlap teteje
+![Asztali — hero](preview/desktop-hero.png)
+
+### Logó (toll) változatok
+![Toll-logó változatok](preview/logo.png)
+
+### Teljes kezdőlap — asztali
+![Teljes asztali oldal](preview/desktop-full.png)
+
+### Teljes kezdőlap — mobil
+![Mobil nézet](preview/mobile-full.png)
+
+> A fotók helye üres (azokat nem tudtam áthozni); minden más a végleges állapot.
+
 ---
 
 ## ⚠️ Fontos — mit tartalmaz ez a branch
