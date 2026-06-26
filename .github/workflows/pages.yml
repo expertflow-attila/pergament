@@ -1,8 +1,6 @@
 name: Deploy preview to GitHub Pages
 
 on:
-  push:
-    branches: [ "claude/blissful-allen-i9q6xe" ]
   workflow_dispatch:
 
 permissions:
